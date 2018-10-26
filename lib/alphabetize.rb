@@ -1,3 +1,8 @@
+ESPERANTO = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+
+
 def alphabetize(arr)
-  # code here
+  arr.sort_by { |string|
+    string.chars.collect { |char|
+      ESPERANTO.index(char) } }
 end
